@@ -1,0 +1,24 @@
+@import '../assets/style/baseStyles.scss';
+
+.header {
+    align-items: center;
+    color: $white;
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    z-index: 1000;
+    
+    &-game {
+        height: 60px;
+        margin-top: 10px !important;
+    
+        &__success {
+            color: $green;
+        }
+    
+        &__error {
+            color: $red;
+        }
+    }
+}
+

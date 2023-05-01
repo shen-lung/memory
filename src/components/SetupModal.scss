@@ -1,0 +1,7 @@
+@import '../assets/style/baseStyles.scss';
+
+.modal-setup {
+    &__body {
+        background-color: $setup-background-color;
+    }
+}
