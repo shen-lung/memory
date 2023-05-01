@@ -1,0 +1,46 @@
+@import '../assets/style/baseStyles.scss';
+
+@mixin imageFront {
+    position: absolute;
+    transition: all ease-in 0.2s;
+}
+
+.card-img {
+    position: relative;
+
+    &__image {
+        background-position: center;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+    }
+
+    &__no-flipped {
+        height: 100%;
+        width: 100%;
+    }
+
+    &__image-front {
+        @include imageFront;
+        transform: rotateY(90deg);
+    }
+    
+    &__image-front-success {
+        @include imageFront;
+    }
+
+    &__flipped  &__image-front{
+        transform: rotateY(0deg);
+        transition-delay: 0.2s;
+    }
+
+    &__image-back {
+        transition: all ease-in 0.2s;
+        transition-delay: 0.2s;
+    }
+
+    &__flipped  &__image-back{
+        transform: rotateY(90deg);
+        transition-delay: 0.2s;
+    }
+}

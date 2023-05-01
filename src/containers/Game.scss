@@ -1,0 +1,26 @@
+@import '../assets/style/baseStyles.scss';
+
+.game-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+
+    &__intro {
+        position: absolute;
+        top: 13%;
+    }
+
+    &__image-intro {
+        height: auto;
+        width: 107%;
+    }
+    
+    @media (min-width: 100px) {
+        &__intro {
+            width: 80%;
+        }
+    }
+}
+

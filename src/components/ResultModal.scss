@@ -1,0 +1,14 @@
+@import '../assets/style/baseStyles.scss';
+
+.modal-result {
+    &__image {
+        left: 18%;
+        position: relative;
+        width: 60% !important;
+    }
+
+    &__body {
+        background-color: $seccess-background-color;
+    }
+
+}

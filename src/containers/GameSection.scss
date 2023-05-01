@@ -1,0 +1,44 @@
+@import '../assets/style/baseStyles.scss';
+
+.game {
+    background-color: $background-color;
+    border-radius: 5px;
+    margin-top: 10px !important;
+    width: 900px;
+}
+
+@media (min-width: 100px) {
+    .container {
+        --bs-gutter-x: none !important;
+    }
+    .game {
+        height: 150px;
+    }
+}
+
+@media (min-width: 311px) {
+    .container {
+        --bs-gutter-x: none !important;
+    }
+    .game {
+        height: 250px;
+    }
+}
+
+@media (min-width: 576px) {
+    .game {
+        height: 376px;
+    }
+}
+
+@media (min-width: 768px) {
+    .game {
+        height: 556px;
+    }
+}
+
+@media (min-width: 992px) {
+    .game {
+        height: 634px;
+    }
+}

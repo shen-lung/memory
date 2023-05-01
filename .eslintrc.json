@@ -1,0 +1,75 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true,
+    "jest": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "prettier"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 13,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "prettier"
+  ],
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "quotes": [
+      "error",
+      "single",
+      {
+        "avoidEscape": true
+      }
+    ],
+    "semi": [
+      "error",
+      "never"
+    ],
+    "react/prop-types": 0,
+    "space-before-blocks": "error",
+    "brace-style": "error",
+    "no-multi-spaces": "error",
+    "key-spacing": [
+      "error",
+      {
+        "beforeColon": false,
+        "afterColon": true
+      }
+    ],
+    "object-curly-spacing": [
+      "error",
+      "always"
+    ],
+    "camelcase": "error",
+    "prefer-const": "error",
+    "eqeqeq": [
+      "error",
+      "smart"
+    ],
+    "prefer-template": "error",
+    "no-console": "error",
+    "prettier/prettier": [
+      "error",
+      {
+        "trailingComma": "all",
+        "semi": false,
+        "tab": true,
+        "useTabs": true,
+        "singleQuote": true
+      }
+    ]
+  }
+}
